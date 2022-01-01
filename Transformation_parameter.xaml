@@ -1,0 +1,56 @@
+﻿<Window x:Class="CRP_Assignments.Transformation_parameter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRP_Assignments"
+        mc:Ignorable="d"
+        Title="Transformation_parameter" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Forward" Content="Forward" HorizontalAlignment="Left" Height="42" Margin="587,123,0,0" VerticalAlignment="Top" Width="104" Click="Forward_Click" FontSize="16"/>
+        <Button x:Name="Backward" Content="Backward" HorizontalAlignment="Left" Height="40" Margin="587,240,0,0" VerticalAlignment="Top" Width="104" Click="Backward_Click" FontSize="16"/>
+        <Label x:Name="Sim_Label" Content="Similarity Transformation" HorizontalAlignment="Left" Height="47" Margin="28,10,0,0" VerticalAlignment="Top" Width="344" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="Sim_Tx_Label" Content="Translation X" HorizontalAlignment="Left" Height="28" Margin="36,57,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold" Visibility="Visible"/>
+        <Label x:Name="Sim_Ty_Label" Content="Translation Y" HorizontalAlignment="Left" Height="28" Margin="36,90,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Sim_Scale_Label" Content="Scale" HorizontalAlignment="Left" Height="28" Margin="200,57,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Sim_Rot_Label" Content="Rotation" HorizontalAlignment="Left" Height="28" Margin="200,90,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Aff_Label" Content="Affine Transformation" HorizontalAlignment="Left" Height="37" Margin="28,123,0,0" VerticalAlignment="Top" Width="344" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="Aff_Tx_Label" Content="Translation X" HorizontalAlignment="Left" Height="28" Margin="36,175,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Aff_Ty_Label" Content="Translation Y" HorizontalAlignment="Left" Height="28" Margin="36,217,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Aff_Scalex_Label" Content="Scale X" HorizontalAlignment="Left" Height="28" Margin="346,175,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Aff_Scaley_Label" Content="Scale Y"  HorizontalAlignment="Left" Height="28" Margin="346,217,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Aff_Shear_Label" Content="Shear" HorizontalAlignment="Left" Height="28" Margin="200,217,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Aff_Rot_Label" Content="Rotation" HorizontalAlignment="Left" Height="28" Margin="200,175,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Proj_Label" Content="Projective Transformation" HorizontalAlignment="Left" Height="40" Margin="28,265,0,0" VerticalAlignment="Top" Width="344" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="Proj_Tx_Label" Content="Translation X" HorizontalAlignment="Left" Height="28" Margin="36,310,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Proj_Ty_Label" Content="Translation Y" HorizontalAlignment="Left" Height="28" Margin="36,343,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Proj_Tz_Label" Content="Translation Z" HorizontalAlignment="Left" Height="28" Margin="36,376,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Proj_Omega_Label" Content="Omega" HorizontalAlignment="Left" Height="28" Margin="200,310,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Proj_Phi_Label" Content="Phi" HorizontalAlignment="Left" Height="28" Margin="200,343,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Proj_Kappa_Label" Content="Kappa" HorizontalAlignment="Left" Height="28" Margin="200,376,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Proj_Scalex_Label" Content="Scale X" HorizontalAlignment="Left" Height="28" Margin="346,310,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <Label x:Name="Proj_Scaley_Label" Content="Scale Y"  HorizontalAlignment="Left" Height="28" Margin="346,343,0,0" VerticalAlignment="Top" Width="85" FontSize="12" FontWeight="Bold"/>
+        <TextBox x:Name="Sim_Tx" HorizontalAlignment="Left" Height="16" Margin="139,63,0,0" Text="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Sim_Ty" HorizontalAlignment="Left" Height="16" Margin="139,96,0,0" Text="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Sim_Rot" HorizontalAlignment="Left" Height="16" Margin="285,96,0,0" Text="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Sim_Scale" HorizontalAlignment="Left" Height="16" Margin="285,63,0,0" Text="1.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Aff_Tx" HorizontalAlignment="Left" Height="16" Margin="139,179,0,0" Text="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Aff_Ty" HorizontalAlignment="Left" Height="16" Margin="139,221,0,0" Text="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Aff_Rot" HorizontalAlignment="Left" Height="16" Margin="285,179,0,0" Text="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Aff_Shear" HorizontalAlignment="Left" Height="16" Margin="285,221,0,0" Text="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Aff_Scalex" HorizontalAlignment="Left" Height="16" Margin="418,179,0,0" Text="1.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Aff_Scaley" HorizontalAlignment="Left" Height="16" Margin="418,221,0,0" Text="1.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Proj_Tx" HorizontalAlignment="Left" Height="16" Margin="139,316,0,0" Text="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Proj_Ty" HorizontalAlignment="Left" Height="16" Margin="139,349,0,0" Text="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Proj_Tz" HorizontalAlignment="Left" Height="16" Margin="139,382,0,0" Text="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Proj_Omega" HorizontalAlignment="Left" Height="16" Margin="285,316,0,0" Text="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Proj_Phi" HorizontalAlignment="Left" Height="16" Margin="285,349,0,0" Text="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Proj_Kappa" HorizontalAlignment="Left" Height="16" Margin="285,382,0,0" Text="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Proj_Scalex" HorizontalAlignment="Left" Height="16" Margin="418,316,0,0" Text="1.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <TextBox x:Name="Proj_Scaley" HorizontalAlignment="Left" Height="16" Margin="418,349,0,0" Text="1.5" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"  />
+        <CheckBox x:Name="TransImg2" Content="Transform Image 2" HorizontalAlignment="Left" Height="22" Margin="587,327,0,0" VerticalAlignment="Top" Width="149" />
+        <CheckBox x:Name="PutResultat01" Content="Put Result at left" HorizontalAlignment="Left" Height="22" Margin="587,360,0,0" VerticalAlignment="Top" Width="149" Checked="PutResultat01_Checked" />
+        <Button x:Name="Exit" Content="Exit" HorizontalAlignment="Left" Height="18" Margin="714,404,0,0" VerticalAlignment="Top" Width="52" Click="Exit_Click"/>
+
+    </Grid>
+</Window>
